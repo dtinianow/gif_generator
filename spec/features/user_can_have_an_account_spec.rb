@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "User has an account" do
+RSpec.feature "User can have an account" do
   scenario "they can visit the homepage and create a new account" do
     visit root_path
 
@@ -49,7 +49,7 @@ RSpec.feature "User has an account" do
 
     click_on "Logout"
 
-    expect(current_path).to eq(login_path)
+    expect(current_path).to eq(root_path)
     expect(page).to_not have_content("david")
   end
 end
