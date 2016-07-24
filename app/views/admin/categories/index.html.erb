@@ -1,10 +1,11 @@
 <h1>Admin Categories</h1>
 
 <% @categories.each do |category| %>
-  <%= link_to category.name, category_path(category) %><br>
+  <%= link_to category.name, admin_category_path(category) %>
+  <%= link_to "Delete", admin_category_path(category), method: :delete %>
+  <br>
 <% end %>
 
-<br>
 <br>
 
 <%= link_to "Return to Admin Homepage", user_path(current_user) %>

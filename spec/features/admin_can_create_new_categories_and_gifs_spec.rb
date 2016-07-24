@@ -8,7 +8,7 @@ RSpec.feature "Admin creates a new category and gif" do
     expect(Category.count).to eq(0)
     expect(Gif.count).to eq(0)
 
-    visit admin_categories_path
+    visit user_path(admin)
 
     click_on "Create a New Gif"
 

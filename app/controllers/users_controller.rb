@@ -16,11 +16,15 @@ class UsersController < ApplicationController
   end
 
   def show
-   @user = User.find(params[:id])
+    if current_user.id == params[:id].to_i
+      @user = User.find(params[:id])
+    else
+      render file: "/public/404"
+    end
   end
 
 
-private
+  private
 
   def user_params
     params.require(:user).permit(:username, :password)
