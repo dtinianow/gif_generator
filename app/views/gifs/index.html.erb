@@ -1,17 +1,15 @@
-<h1><%= @category.name %></h1>
+<h1>All Gifs</h1>
 
-<% @category.gifs.each do |gif| %>
+<% @gifs.each do |gif| %>
    <img src="<%= gif.image_path %>">
 <% end %>
 
-<%= link_to "Return to All Categories", categories_path %>
-<br>
-<%= link_to "Return Home", root_path %>
 <br><br>
+
+<%= link_to "Return Home", root_path %>
 <% if current_user %>
   <%= link_to "Logout", logout_path, method: :delete %>
 <% else %>
   <%= link_to "Login", login_path %>
-  <br>
   <%= link_to "Create New Account", new_user_path %>
 <% end %>

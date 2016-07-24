@@ -1,5 +1,26 @@
 <h1>Welcome, <%= current_user.username %>!</h1>
 
-<%= link_to "See All Categories", categories_path %>
+<% if current_user.admin? %>
+ <%= link_to "Create a New Gif", new_admin_category_path %>
+ <br>
+ <%= "Edit Categories" %>
+ <br>
+ <%= "Edit Gifs" %>
+<% else %>
+ <%= "My Favorite Gifs" %>
+ <br>
+ <% end %>
+
 <br>
-<%= link_to "Logout", logout_path, method: :delete %>
+<br>
+
+<%= link_to "Return to Homepage", root_path %>
+<br><br>
+
+
+<% if current_user %>
+  <%= link_to "Logout", logout_path, method: :delete %>
+<% else %>
+  <%= link_to "Login", login_path %>
+  <%= link_to "Create New Account", new_user_path %>
+<% end %>
