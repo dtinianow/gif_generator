@@ -8,7 +8,7 @@ RSpec.feature "User can interact with gifs" do
 
     visit gifs_path
 
-    expect(page).to have_content("All Gifs")
+    expect(page).to have_content("Welcome to the Gif Generator!")
     expect(page).to have_xpath("//img[@src='http://example.com']")
   end
 end

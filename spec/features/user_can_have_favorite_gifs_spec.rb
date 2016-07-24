@@ -19,10 +19,9 @@ RSpec.feature "User can have favorite gifs" do
 
     expect(current_path).to eq(gifs_path)
 
-    click_on "Return Home"
     click_on "My Dashboard"
     expect(Favorite.count).to eq(1)
-    expect(current_path).to eq(user_favorites_path(user))
+    expect(current_path).to eq(user_path(user))
     expect(page).to have_xpath("//img[@src='http://media1.giphy.com/media/1313mmmP3ETX3O/giphy.gif']")
   end
 end

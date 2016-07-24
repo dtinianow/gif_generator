@@ -49,7 +49,7 @@ RSpec.feature "User can have an account" do
 
     click_on "Logout"
 
-    expect(current_path).to eq(root_path)
+    expect(current_path).to eq(gifs_path)
     expect(page).to_not have_content("david")
   end
 end
