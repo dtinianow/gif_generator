@@ -1,23 +1,17 @@
-<h1>Welcome to the Gif Generator!</h1>
+<div class="span12">
+  <div class="well page-header">
+  <h1 class="text-center">Welcome to the Gif Generator!</h1>
+  <% if current_user %>
+  <br>
+  <h4 class="text-center">Click on a Gif To Add It Your Favorites!</h4>
+  <% end %>
+</div>
 
-<% if current_user %>
-<%= link_to "Logout", logout_path, method: :delete %>
-<% else %>
-<%= link_to "Login", login_path %>
-<br>
-<%= link_to "Create New Account", new_user_path %>
-<% end %>
-
-<br>
-
-<%= link_to "See All Categories", categories_path %>
-<br>
-<%= link_to "My Dashboard", user_path(current_user) if current_user %>
-<br><br>
-
-<% @gifs.each do |gif| %>
-   <img src="<%= gif.image_path %>">
-   <% if current_user %>
-     <%= link_to "Favorite", user_gifs_path(current_user, gif_id: gif.id), method: :post %>
-   <% end %>
-<% end %>
+  <% @gifs.each do |gif| %>
+    <% if current_user %>
+     <%= link_to image_tag(gif.image_path), user_gifs_path(current_user, gif_id: gif.id), method: :post %>
+     <% else %>
+     <img src="<%= gif.image_path %>">
+    <% end %>
+  <% end %>
+</div>

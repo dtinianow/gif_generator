@@ -9,6 +9,12 @@ class GifsController < ApplicationController
     redirect_to gifs_path
   end
 
+  def destroy
+   favorite = Favorite.find_by(favorite_params)
+   favorite.destroy
+   redirect_to user_path(current_user)
+  end
+
 private
 
   def favorite_params

@@ -1,17 +1,17 @@
-<h1><%= @category.name %></h1>
+<div class="span12">
+  <div class="text-center well page-header">
+ <h1><%= @category.name %></h1>
+ <% if current_user %>
+ <br>
+ <h4 class="text-center">Click on a Gif To Add It Your Favorites!</h4>
+  <% end %>
+ </div>
 
 <% @category.gifs.each do |gif| %>
+  <% if current_user %>
+   <%= link_to image_tag(gif.image_path), user_gifs_path(current_user, gif_id: gif.id), method: :post %>
+  <% else %>
    <img src="<%= gif.image_path %>">
-<% end %>
-
-<%= link_to "Return to All Categories", categories_path %>
-<br>
-<%= link_to "Return Home", root_path %>
-<br><br>
-<% if current_user %>
-  <%= link_to "Logout", logout_path, method: :delete %>
-<% else %>
-  <%= link_to "Login", login_path %>
-  <br>
-  <%= link_to "Create New Account", new_user_path %>
-<% end %>
+  <% end %>
+ <% end %>
+</div>

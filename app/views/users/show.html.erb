@@ -1,27 +1,13 @@
+<div class="span12">
+  <div class="well page-header text-center">
 <h1>Welcome, <%= current_user.username %>!</h1>
+<br>
+<h4>Click on a Gif To Remove It From Your Favorites!</h4>
+</div>
 
-<% if current_user.admin? %>
- <%= link_to "Create a New Gif", new_admin_category_path %>
- <br>
- <%= link_to "Edit Categories", admin_categories_path %>
- <br>
- <%= "Edit Gifs" %>
-<% else %>
- <%= link_to "Choose Favorite Gifs", gifs_path %>
- <br>
- <% end %>
 
  <% @user.gifs.each do |gif| %>
-    <img src="<%= gif.image_path %>">
+      <%= link_to image_tag(gif.image_path), user_gif_path(current_user, gif_id: gif.id), method: :delete %>
  <% end %>
 <br>
-
-<%= link_to "Return to Homepage", root_path %>
-<br><br>
-
-<% if current_user %>
-  <%= link_to "Logout", logout_path, method: :delete %>
-<% else %>
-  <%= link_to "Login", login_path %>
-  <%= link_to "Create New Account", new_user_path %>
-<% end %>
+</div>

@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root :to => redirect('/gifs')
 
-  resources :users, only: [:new, :create, :show]
+  resources :users, only: [:new, :create, :show] do
+    resources :gifs, only: [:create, :destroy]
+  end
   resources :categories, only: [:index, :show]
   resources :gifs, only: [:index]
 
@@ -11,9 +13,7 @@ Rails.application.routes.draw do
     resources :gifs, only: [:destroy]
   end
 
-  resources :users do
-    resources :gifs, only: [:create]
-  end
+
 
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'

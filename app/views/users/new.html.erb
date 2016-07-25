@@ -1,4 +1,6 @@
-<h1>Create A New Account</h1>
+<h1>Create a New Account</h1>
+<br><br>
+
 <%= form_for User.new do |f| %>
  <%= f.label :username %>
  <%= f.text_field :username %>
@@ -8,5 +10,3 @@
  <%= f.submit "Create New Account" %>
 
 <% end %>
-
-<br><%= link_to "Return Home", root_path %>

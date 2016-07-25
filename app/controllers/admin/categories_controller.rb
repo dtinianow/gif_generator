@@ -20,7 +20,7 @@ class Admin::CategoriesController < Admin::BaseController
 
   def destroy
     category = Category.find(params[:id])
-    category.gifs.destroy_all
+    destroy_gifs(category.gifs)
     category.destroy
     redirect_to admin_categories_path
   end
@@ -36,5 +36,12 @@ private
     raw_data = response.body
     parsed = JSON.parse(raw_data, object_class: OpenStruct)
     parsed.data.fixed_height_downsampled_url
+  end
+
+  def destroy_gifs(gifs)
+    gifs.each do |gif|
+      gif.favorites.destroy_all
+      gif.destroy
+    end
   end
 end

@@ -1,18 +1,9 @@
+<div class="text-center well page-header">
 <h1>Edit <%= @category.name %></h1>
+<br>
+<h4>Click on a Gif To Delete It</h4>
+</div>
 
 <% @category.gifs.each do |gif| %>
-   <img src="<%= gif.image_path %>">
-   <%= link_to "Delete", admin_gif_path(gif), method: :delete %>
-<% end %>
-
-<%= link_to "Return to All Categories", admin_categories_path %>
-<br>
-<%= link_to "Return Home", root_path %>
-<br><br>
-<% if current_user %>
-  <%= link_to "Logout", logout_path, method: :delete %>
-<% else %>
-  <%= link_to "Login", login_path %>
-  <br>
-  <%= link_to "Create New Account", new_user_path %>
+   <%= link_to image_tag(gif.image_path), admin_gif_path(gif), method: :delete %>
 <% end %>

@@ -1,19 +1,11 @@
-<h1>Admin Categories</h1>
+<h1 class="text-center well page-header">Admin Categories</h1>
 
+<table class="table table-bordered table-striped">
 <% @categories.each do |category| %>
-  <%= link_to category.name, admin_category_path(category) %>
-  <%= link_to "Delete", admin_category_path(category), method: :delete %>
+<tr>
+  <td><%= link_to category.name, admin_category_path(category) %></td>
+  <td><%= link_to "Delete", admin_category_path(category), method: :delete %></td>
+</tr>
   <br>
 <% end %>
-
-<br>
-
-<%= link_to "Return to Admin Homepage", user_path(current_user) %>
-<br><br>
-<% if current_user %>
-  <%= link_to "Logout", logout_path, method: :delete %>
-<% else %>
-  <%= link_to "Login", login_path %>
-  <br>
-  <%= link_to "Create New Account", new_user_path %>
-<% end %>
+</div>
