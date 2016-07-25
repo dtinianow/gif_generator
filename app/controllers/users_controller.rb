@@ -1,9 +1,7 @@
 class UsersController < ApplicationController
 
   def new
-    if current_user
-      redirect_to root_path
-    end
+    redirect_to root_path if current_user
   end
 
   def create
