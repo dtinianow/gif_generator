@@ -23,7 +23,7 @@ RSpec.feature "Admin creates a new category and gif" do
 end
 
 RSpec.feature "Admin creates a gif for a category that already exists" do
-  xscenario "they see that category page with the gif on it" do
+  scenario "they see that category page with the gif on it" do
     admin = User.create(username: "david", password: "password", role: 1)
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(admin)
 
