@@ -4,7 +4,7 @@ class Admin::GifsController < Admin::BaseController
    gif = Gif.find(params[:id])
    gif.favorites.destroy_all
    gif.destroy
-   redirect_to admin_category_path(gif.category)
+   redirect_to category_path(gif.category)
   end
 
 end

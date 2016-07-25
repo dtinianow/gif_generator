@@ -1,9 +1,0 @@
-<div class="text-center well page-header">
-<h1>Edit <%= @category.name %></h1>
-<br>
-<h4>Click on a Gif To Delete It</h4>
-</div>
-
-<% @category.gifs.each do |gif| %>
-   <%= link_to image_tag(gif.image_path), admin_gif_path(gif), method: :delete %>
-<% end %>

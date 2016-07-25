@@ -1,13 +1,5 @@
 class Admin::CategoriesController < Admin::BaseController
 
-  def index
-    @categories = Category.all
-  end
-
-  def show
-    @category = Category.find(params[:id])
-  end
-
   def new
     @category = Category.new
   end
@@ -22,7 +14,7 @@ class Admin::CategoriesController < Admin::BaseController
     category = Category.find(params[:id])
     destroy_gifs(category.gifs)
     category.destroy
-    redirect_to admin_categories_path
+    redirect_to categories_path
   end
 
 private

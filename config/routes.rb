@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :gifs, only: [:index]
 
   namespace :admin do
-    resources :categories, only: [:index, :show, :new, :create, :destroy]
+    resources :categories, only: [:new, :create, :destroy]
     resources :gifs, only: [:destroy]
   end
 

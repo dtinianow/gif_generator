@@ -15,7 +15,6 @@
         <li><%= link_to "Return Home", gifs_path %></li>
         <% if current_user && current_user.admin? %>
         <li><%= link_to "Create a New Gif", new_admin_category_path %></li>
-        <li><%= link_to "Edit Categories", admin_categories_path %></li>
         <% end %>
         <li><%= link_to "See All Categories", categories_path %></li>
         <% if current_user %>

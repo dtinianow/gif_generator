@@ -28,7 +28,9 @@ gem 'faraday'
 gem 'json'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
-
+gem 'simplecov', :require => false, :group => :test
+gem 'binding_of_caller'
+gem 'will_paginate', '~> 3.1.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -46,6 +48,7 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
+  gem 'better_errors'
 end
 
 gem 'rails_12factor', group: :production
