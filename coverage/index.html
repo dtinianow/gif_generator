@@ -14,14 +14,14 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-25T11:12:46-06:00">2016-07-25T11:12:46-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-07-26T10:00:55-06:00">2016-07-26T10:00:55-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">87.12%</span></span>
+    (<span class="covered_percent"><span class="yellow">86.38%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
@@ -32,9 +32,9 @@
   <a name="AllFiles"></a>
   <div>
     <b>40</b> files in total.
-    <b>326</b> relevant lines. 
-    <span class="green"><b>284</b> lines covered</span> and
-    <span class="red"><b>42</b> lines missed </span>
+    <b>323</b> relevant lines. 
+    <span class="green"><b>279</b> lines covered</span> and
+    <span class="red"><b>44</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,15 +57,15 @@
         <td>4</td>
         <td>4</td>
         <td>0</td>
-        <td>3.5</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#e78d721dcf2b902611f6de8b0af1aec86f2ce273" class="src_link" title="app/controllers/admin/categories_controller.rb">app/controllers/admin/categories_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>47</td>
-        <td>28</td>
-        <td>28</td>
+        <td>39</td>
+        <td>24</td>
+        <td>24</td>
         <td>0</td>
         <td>1.4</td>
       </tr>
@@ -77,7 +77,7 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>5.4</td>
+        <td>6.3</td>
       </tr>
       
       <tr>
@@ -87,7 +87,7 @@
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>1.4</td>
+        <td>2.2</td>
       </tr>
       
       <tr>
@@ -112,10 +112,10 @@
       
       <tr>
         <td class="strong"><a href="#8d981f6f5ac40587c4388e152aa08a30937e80eb" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
-        <td class="red strong">50.0 %</td>
-        <td>34</td>
-        <td>18</td>
-        <td>9</td>
+        <td class="red strong">52.63 %</td>
+        <td>35</td>
+        <td>19</td>
+        <td>10</td>
         <td>9</td>
         <td>0.6</td>
       </tr>
@@ -342,22 +342,22 @@
       
       <tr>
         <td class="strong"><a href="#a3bb940b87d08a07e735a36447ff9c6572054c5a" class="src_link" title="spec/features/admin_can_delete_gifs_and_categories_spec.rb">spec/features/admin_can_delete_gifs_and_categories_spec.rb</a></td>
-        <td class="yellow strong">80.65 %</td>
+        <td class="yellow strong">87.1 %</td>
         <td>47</td>
         <td>31</td>
-        <td>25</td>
-        <td>6</td>
-        <td>0.8</td>
+        <td>27</td>
+        <td>4</td>
+        <td>0.9</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#531c6e630fc53268f07ab7ebd0205d635d35aa8b" class="src_link" title="spec/features/admin_can_see_admin_categories_spec.rb">spec/features/admin_can_see_admin_categories_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="red strong">73.33 %</td>
         <td>27</td>
         <td>15</td>
-        <td>15</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td>11</td>
+        <td>4</td>
+        <td>0.7</td>
       </tr>
       
       <tr>
@@ -504,8 +504,8 @@
           <code class="ruby">  def require_admin</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="5">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="5" data-linenumber="5">
+          <span class="hits">5</span>
           
           <code class="ruby">    render file: &quot;/public/404&quot; unless current_admin?</code>
         </li>
@@ -531,8 +531,8 @@
     <h3>app/controllers/admin/categories_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>28</b> relevant lines. 
-      <span class="green"><b>28</b> lines covered</span> and
+      <b>24</b> relevant lines. 
+      <span class="green"><b>24</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -555,13 +555,13 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  def index</code>
+          <code class="ruby">  def new</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="4">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
           
-          <code class="ruby">    @categories = Category.all</code>
+          <code class="ruby">    @category = Category.new</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -579,244 +579,196 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">  def show</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @category = Category.find(params[:id])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def new</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    @category = Category.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
+        <li class="covered" data-hits="2" data-linenumber="8">
           <span class="hits">2</span>
           
           <code class="ruby">    category = Category.find_or_create_by(category_params)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="17">
+        <li class="covered" data-hits="2" data-linenumber="9">
           <span class="hits">2</span>
           
           <code class="ruby">    category.gifs.create(image_path: image_path(category))</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="18">
+        <li class="covered" data-hits="2" data-linenumber="10">
           <span class="hits">2</span>
           
           <code class="ruby">    redirect_to category</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
           <code class="ruby">    category = Category.find(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
           <code class="ruby">    destroy_gifs(category.gifs)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
           <code class="ruby">    category.destroy</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
+        <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">    redirect_to admin_categories_path</code>
+          <code class="ruby">    redirect_to categories_path</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">private</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
           <code class="ruby">  def category_params</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="31">
+        <li class="covered" data-hits="2" data-linenumber="23">
           <span class="hits">2</span>
           
           <code class="ruby">    params.require(:category).permit(:name)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
+        <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
           <code class="ruby">  def image_path(category)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="35">
+        <li class="covered" data-hits="2" data-linenumber="27">
           <span class="hits">2</span>
           
           <code class="ruby">    response = Faraday.get(&quot;http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&amp;tag=#{category.name}&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="36">
+        <li class="covered" data-hits="2" data-linenumber="28">
           <span class="hits">2</span>
           
           <code class="ruby">    raw_data = response.body</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="37">
+        <li class="covered" data-hits="2" data-linenumber="29">
           <span class="hits">2</span>
           
           <code class="ruby">    parsed = JSON.parse(raw_data, object_class: OpenStruct)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="38">
+        <li class="covered" data-hits="2" data-linenumber="30">
           <span class="hits">2</span>
           
           <code class="ruby">    parsed.data.fixed_height_downsampled_url</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="41">
+        <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
           <code class="ruby">  def destroy_gifs(gifs)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
+        <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
           <code class="ruby">    gifs.each do |gif|</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
+        <li class="covered" data-hits="1" data-linenumber="35">
           <span class="hits">1</span>
           
           <code class="ruby">      gif.favorites.destroy_all</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
+        <li class="covered" data-hits="1" data-linenumber="36">
           <span class="hits">1</span>
           
           <code class="ruby">      gif.destroy</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="37">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="never" data-hits="" data-linenumber="38">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby">end</code>
@@ -861,7 +813,7 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  helper_method :current_user</code>
+          <code class="ruby">  helper_method :current_user, :current_admin?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -876,8 +828,8 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="22" data-linenumber="7">
-          <span class="hits">22</span>
+        <li class="covered" data-hits="24" data-linenumber="7">
+          <span class="hits">24</span>
           
           <code class="ruby">    @user ||= User.find(session[:user_id]) if session[:user_id]</code>
         </li>
@@ -900,8 +852,8 @@
           <code class="ruby">  def current_admin?</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="11">
-          <span class="hits">11</span>
+        <li class="covered" data-hits="15" data-linenumber="11">
+          <span class="hits">15</span>
           
           <code class="ruby">    current_user &amp;&amp; current_user.admin?</code>
         </li>
@@ -954,10 +906,10 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="4">
+          <span class="hits">4</span>
           
-          <code class="ruby">    @categories = Category.paginate(:page =&gt; params[:page])</code>
+          <code class="ruby">    @categories = Category.all</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -978,8 +930,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="8">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="8">
+          <span class="hits">4</span>
           
           <code class="ruby">    @category = Category.find(params[:id])</code>
         </li>
@@ -1309,10 +1261,10 @@
         <div class="source_table" id="8d981f6f5ac40587c4388e152aa08a30937e80eb">
   <div class="header">
     <h3>app/controllers/users_controller.rb</h3>
-    <h4><span class="red">50.0 %</span> covered</h4>
+    <h4><span class="red">52.63 %</span> covered</h4>
     <div>
-      <b>18</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>19</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>9</b> lines missed.</span>
     </div>
   </div>
@@ -1341,139 +1293,139 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">    redirect_to root_path if current_user</code>
+          <code class="ruby">    @user = User.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    redirect_to root_path if current_user</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
+        <li class="missed" data-hits="0" data-linenumber="9">
           
           
           <code class="ruby">    user = User.new(user_params)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
+        <li class="missed" data-hits="0" data-linenumber="10">
           
           
           <code class="ruby">    if user.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
+        <li class="missed" data-hits="0" data-linenumber="11">
           
           
           <code class="ruby">      session[:user_id] = user.id</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
+        <li class="missed" data-hits="0" data-linenumber="12">
           
           
           <code class="ruby">      flash[:success] = &quot;You have successfully created a new account!&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
+        <li class="missed" data-hits="0" data-linenumber="13">
           
           
           <code class="ruby">      redirect_to user</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">    else</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="14">
-          
-          
-          <code class="ruby">      flash.now[:failure] = &quot;Your login attempt was invalid.  Please try again.&quot;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="15">
           
           
-          <code class="ruby">      render :new</code>
+          <code class="ruby">      flash.now[:failure] = &quot;Your login attempt was invalid.  Please try again.&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="missed" data-hits="0" data-linenumber="16">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      render :new</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="20">
+        <li class="covered" data-hits="2" data-linenumber="21">
           <span class="hits">2</span>
           
           <code class="ruby">    if current_user.id == params[:id].to_i</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="21">
+        <li class="covered" data-hits="2" data-linenumber="22">
           <span class="hits">2</span>
           
           <code class="ruby">      @user = User.find(params[:id])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="23">
+        <li class="missed" data-hits="0" data-linenumber="24">
           
           
           <code class="ruby">      render file: &quot;/public/404&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
@@ -1482,43 +1434,49 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
           <code class="ruby">  private</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
           <code class="ruby">  def user_params</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
+        <li class="missed" data-hits="0" data-linenumber="32">
           
           
           <code class="ruby">    params.require(:user).permit(:username, :password)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">end</code>
@@ -3075,7 +3033,7 @@
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">    resources :categories, only: [:index, :show, :new, :create, :destroy]</code>
+          <code class="ruby">    resources :categories, only: [:new, :create, :destroy]</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="13">
@@ -3339,7 +3297,7 @@
         <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit admin_categories_path</code>
+          <code class="ruby">    visit categories_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
@@ -3409,11 +3367,11 @@
         <div class="source_table" id="a3bb940b87d08a07e735a36447ff9c6572054c5a">
   <div class="header">
     <h3>spec/features/admin_can_delete_gifs_and_categories_spec.rb</h3>
-    <h4><span class="yellow">80.65 %</span> covered</h4>
+    <h4><span class="yellow">87.1 %</span> covered</h4>
     <div>
       <b>31</b> relevant lines. 
-      <span class="green"><b>25</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <span class="green"><b>27</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
   
@@ -3495,7 +3453,7 @@
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit admin_categories_path</code>
+          <code class="ruby">    visit categories_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
@@ -3531,7 +3489,7 @@
         <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(current_path).to eq admin_categories_path</code>
+          <code class="ruby">    expect(current_path).to eq categories_path</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="20">
@@ -3633,7 +3591,7 @@
         <li class="covered" data-hits="1" data-linenumber="36">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit admin_category_path(category)</code>
+          <code class="ruby">    visit category_path(category)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
@@ -3642,8 +3600,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="38">
-          
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_content &quot;Funny&quot;</code>
         </li>
@@ -3654,8 +3612,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="40">
-          
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
           
           <code class="ruby">    click_on &quot;Delete&quot;</code>
         </li>
@@ -3669,7 +3627,7 @@
         <li class="missed" data-hits="0" data-linenumber="42">
           
           
-          <code class="ruby">    expect(current_path).to eq admin_category_path(category)</code>
+          <code class="ruby">    expect(current_path).to eq category_path(category)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="43">
@@ -3709,11 +3667,11 @@
         <div class="source_table" id="531c6e630fc53268f07ab7ebd0205d635d35aa8b">
   <div class="header">
     <h3>spec/features/admin_can_see_admin_categories_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">73.33 %</span> covered</h4>
     <div>
       <b>15</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
   
@@ -3792,14 +3750,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
           
           <code class="ruby">    expect(page).to have_content &quot;Admin Categories&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
           
           <code class="ruby">    expect(page).to have_content &quot;Funny&quot;</code>
         </li>
@@ -3858,14 +3816,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
           
           <code class="ruby">    expect(page).to_not have_content &quot;Admin Categories&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
           
           <code class="ruby">    expect(page).to have_content &quot;The page you were looking for doesn&#39;t exist.&quot;</code>
         </li>

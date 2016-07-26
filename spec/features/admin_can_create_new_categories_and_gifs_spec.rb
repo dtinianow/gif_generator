@@ -31,7 +31,7 @@ RSpec.feature "Admin creates a gif for a category that already exists" do
     result = Category.count
     expect(result).to eq(1)
 
-    visit admin_categories_path
+    visit categories_path
 
     click_on "Create a New Gif"
 

@@ -1,18 +1,18 @@
 <div class="span12">
   <div class="text-center well page-header">
- <h1><%= @category.name %></h1>
- <% if current_user && current_user.admin? %>
- <br>
- <h4 class="text-center">Click on a Gif To Delete It!</h4>
- <% elsif current_user %>
- <br>
- <h4 class="text-center">Click on a Gif To Add It Your Favorites!</h4>
-  <% end %>
- </div>
+   <h1><%= @category.name %></h1>
+    <% if current_admin? %>
+      <br>
+      <h4 class="text-center">Click on a Gif To Delete It!</h4>
+    <% elsif current_user %>
+     <br>
+     <h4 class="text-center">Click on a Gif To Add It Your Favorites!</h4>
+    <% end %>
+  </div>
 
-<% @category.gifs.each do |gif| %>
-  <% if current_user && current_user.admin? %>
-  <%= link_to image_tag(gif.image_path), admin_gif_path(gif), method: :delete %>
+ <% @category.gifs.each do |gif| %>
+  <% if current_admin? %>
+   <%= link_to image_tag(gif.image_path), admin_gif_path(gif), method: :delete %>
   <% elsif current_user %>
    <%= link_to image_tag(gif.image_path), user_gifs_path(current_user, gif_id: gif.id), method: :post %>
   <% else %>

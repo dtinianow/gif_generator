@@ -10,13 +10,13 @@ RSpec.feature "Admin deletes a category" do
     expect(Category.count).to eq(1)
     expect(Gif.count).to eq(1)
 
-    visit admin_categories_path
+    visit categories_path
 
     expect(page).to have_content "Funny"
 
     click_on "Delete"
 
-    expect(current_path).to eq admin_categories_path
+    expect(current_path).to eq categories_path
     expect(page).to_not have_content "Funny"
     expect(Category.count).to eq(0)
     expect(Gif.count).to eq(0)
@@ -33,13 +33,13 @@ RSpec.feature "Admin deletes a gif" do
     expect(Category.count).to eq(1)
     expect(Gif.count).to eq(1)
 
-    visit admin_category_path(category)
+    visit category_path(category)
 
     expect(page).to have_content "Funny"
 
     click_on "Delete"
 
-    expect(current_path).to eq admin_category_path(category)
+    expect(current_path).to eq category_path(category)
     expect(page).to have_content "Funny"
     expect(Category.count).to eq(1)
     expect(Gif.count).to eq(0)

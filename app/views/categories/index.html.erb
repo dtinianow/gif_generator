@@ -1,12 +1,13 @@
 <h1 class="text-center well page-header">All Categories</h1>
 
 <table class="table table-bordered table-striped">
-<% @categories.each do |category| %>
-  <tr>
-    <td class="text-center"><%= link_to category.name, category_path(category) %>
-      <% if current_user && current_user.admin? %>
-    - <%= link_to "Delete", admin_category_path(category), method: :delete %></td>
-    <% end %>
-  </tr>
-<% end %>
+ <% @categories.each do |category| %>
+   <tr>
+     <td class="text-center"><%= link_to category.name, category_path(category) %>
+       <% if current_admin?  %>
+         - <%= link_to "Delete", admin_category_path(category), method: :delete %>
+       <% end %>
+     </td>
+   </tr>
+ <% end %>
 </table>

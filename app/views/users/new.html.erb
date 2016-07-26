@@ -1,7 +1,8 @@
 <h1>Create a New Account</h1>
+
 <br><br>
 
-<%= form_for User.new do |f| %>
+<%= form_for @user do |f| %>
  <%= f.label :username %>
  <%= f.text_field :username %>
  <%= f.label :password %>
